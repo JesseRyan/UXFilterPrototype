@@ -7,7 +7,7 @@ package com.jesseryan_dev.uxfilterprototype;
 public class AndroidVersion {
 
     private String android_version_name;
-    private String android_image_url;
+    private int android_image_res;
 
     public String getAndroid_version_name() {
         return android_version_name;
@@ -17,12 +17,12 @@ public class AndroidVersion {
         this.android_version_name = android_version_name;
     }
 
-    public String getAndroid_image_url() {
-        return android_image_url;
+    public int getAndroid_image_res() {
+        return android_image_res;
     }
 
-    public void setAndroid_image_url(String android_image_url) {
-        this.android_image_url = android_image_url;
+    public void setAndroid_image_res(int android_image_url) {
+        this.android_image_res = android_image_url;
     }
 
 }
