@@ -4,6 +4,150 @@
     android:layout_height="match_parent"
     tools:context="com.jesseryan_dev.uxfilterprototype.MainActivity">
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:background="@color/colorAccent"
+                android:layout_margin="6dp"
+                android:text="&lt; 10k"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/card_recycler_view"
         android:layout_width="match_parent"
