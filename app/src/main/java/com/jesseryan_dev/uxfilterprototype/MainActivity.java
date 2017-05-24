@@ -12,19 +12,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private final String android_version_names[] = {
-            "Donut",
-            "Eclair",
-            "Froyo",
-            "Gingerbread",
-            "Honeycomb",
-            "Ice Cream Sandwich",
-            "Jelly Bean",
-            "KitKat",
-            "Lollipop",
-            "Marshmallow"
-    };
-
     private final int android_image_res[] = {
             R.drawable.one, R.drawable.two, R.drawable.three,
             R.drawable.four, R.drawable.five, R.drawable.six,
@@ -50,20 +37,22 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(layoutManager);
 
-        ArrayList<AndroidVersion> androidVersions = prepareData();
-        DataAdapter adapter = new DataAdapter(getApplicationContext(), androidVersions);
+        ArrayList<ResultImages> resultImages = prepareData();
+        DataAdapter adapter = new DataAdapter(resultImages);
         recyclerView.setAdapter(adapter);
+
+
+
 
     }
 
-    private ArrayList<AndroidVersion> prepareData() {
+    private ArrayList<ResultImages> prepareData() {
 
-        ArrayList<AndroidVersion> android_version = new ArrayList<>();
-        for (int i = 0; i < android_version_names.length; i++) {
-            AndroidVersion androidVersion = new AndroidVersion();
-            androidVersion.setAndroid_version_name(android_version_names[i]);
-            androidVersion.setAndroid_image_res(android_image_res[i]);
-            android_version.add(androidVersion);
+        ArrayList<ResultImages> android_version = new ArrayList<>();
+        for (int i = 0; i < android_image_res.length; i++) {
+            ResultImages resultImages = new ResultImages();
+            resultImages.setAndroid_image_res(android_image_res[i]);
+            android_version.add(resultImages);
         }
         return android_version;
     }

@@ -4,7 +4,7 @@ package com.jesseryan_dev.uxfilterprototype;
  * Created by Nimbus on 5/17/2017.
  */
 
-public class AndroidVersion {
+public class ResultImages {
 
     private String android_version_name;
     private int android_image_res;

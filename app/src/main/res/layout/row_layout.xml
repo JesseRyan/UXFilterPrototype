@@ -9,11 +9,4 @@
         android:adjustViewBounds="true"
         android:layout_width="200dp"
         android:layout_height="200dp" />
-    <TextView
-        android:id="@+id/tv_android"
-        android:layout_gravity="center"
-        android:textColor="#FFFFFF"
-        android:textStyle="bold"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 </LinearLayout>

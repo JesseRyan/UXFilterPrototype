@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.jesseryan_dev.uxfilterprototype.MainActivity">
 
     <HorizontalScrollView
@@ -29,7 +30,7 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 20k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
@@ -38,7 +39,7 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 30k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
@@ -47,7 +48,7 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 40k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
@@ -56,15 +57,27 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 50k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
             <TextView
-                android:layout_width="48dp"
-                android:text="&lt; 10k"
+                android:layout_width="wrap_content"
+                android:id="@+id/similar"
+                android:text="Similar Vehicles"
                 android:gravity="center"
                 android:layout_height="24dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="6dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/colorAccent"/>
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="24dp"
+                android:text="&lt; 60k"
+                android:gravity="center"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
                 android:textColor="@color/colorPrimary"/>
@@ -72,27 +85,9 @@
             <TextView
                 android:layout_width="48dp"
                 android:layout_height="24dp"
-                android:text="&lt; 10k"
-                android:gravity="center"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:textColor="@color/colorPrimary"/>
-
-            <TextView
-                android:layout_width="48dp"
-                android:layout_height="24dp"
-                android:background="@color/colorAccent"
-                android:layout_margin="6dp"
-                android:text="&lt; 10k"
-                android:gravity="center"
-                android:textColor="@color/colorPrimary"/>
-
-            <TextView
-                android:layout_width="48dp"
-                android:layout_height="24dp"
-                android:background="@color/colorAccent"
-                android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 70k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
@@ -101,9 +96,21 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 80k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/new_vehicles"
+                android:text="New Vehicles"
+                android:gravity="center"
+                android:layout_height="24dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="6dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/colorAccent"/>
 
 
             <TextView
@@ -111,7 +118,7 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 100k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
@@ -120,17 +127,7 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
-                android:gravity="center"
-                android:textColor="@color/colorPrimary"/>
-
-
-            <TextView
-                android:layout_width="48dp"
-                android:layout_height="24dp"
-                android:background="@color/colorAccent"
-                android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 120k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
 
@@ -140,9 +137,22 @@
                 android:layout_height="24dp"
                 android:background="@color/colorAccent"
                 android:layout_margin="6dp"
-                android:text="&lt; 10k"
+                android:text="&lt; 130k"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/recommendations"
+                android:text="Recommendations"
+                android:gravity="center"
+                android:layout_height="24dp"
+                android:background="@color/colorPrimary"
+                android:layout_margin="6dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:textColor="@color/colorAccent"/>
 
         </LinearLayout>
 

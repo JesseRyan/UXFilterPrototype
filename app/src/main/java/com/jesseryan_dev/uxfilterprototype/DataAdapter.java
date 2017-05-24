@@ -1,24 +1,18 @@
 package com.jesseryan_dev.uxfilterprototype;
 
-        import android.content.Context;
         import android.support.v7.widget.RecyclerView;
         import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
         import android.widget.ImageView;
-        import android.widget.TextView;
 
-        import com.squareup.picasso.Picasso;
         import java.util.ArrayList;
 
 public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
-    private ArrayList<AndroidVersion> android;
-    private Context context;
+    private ArrayList<ResultImages> android;
 
-
-    public DataAdapter(Context context,ArrayList<AndroidVersion> android) {
+    public DataAdapter(ArrayList<ResultImages> android) {
         this.android = android;
-        this.context = context;
     }
 
     @Override
@@ -29,8 +23,6 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(DataAdapter.ViewHolder viewHolder, int i) {
-
-        viewHolder.tv_android.setText(android.get(i).getAndroid_version_name());
         viewHolder.img_android.setBackgroundResource(android.get(i).getAndroid_image_res());
     }
 
@@ -40,12 +32,9 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView tv_android;
         private ImageView img_android;
         public ViewHolder(View view) {
             super(view);
-
-            tv_android = (TextView)view.findViewById(R.id.tv_android);
             img_android = (ImageView) view.findViewById(R.id.img_android);
         }
     }
