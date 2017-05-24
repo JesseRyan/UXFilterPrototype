@@ -6,6 +6,7 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.BottomSheetDialogFragment;
 import android.support.design.widget.CoordinatorLayout;
 import android.view.View;
+import android.widget.TextView;
 
 import com.jesseryan_dev.uxfilterprototype.R;
 
@@ -35,6 +36,14 @@ public class RefineFilterBottomSheetFragment extends BottomSheetDialogFragment {
         super.setupDialog(dialog, style);
         View contentView = View.inflate(getContext(), R.layout.refine_filter_bottom_sheet, null);
         dialog.setContentView(contentView);
+
+        TextView dismissButton = (TextView)contentView.findViewById(R.id.dismiss);
+        dismissButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dismiss();
+            }
+        });
 
         CoordinatorLayout.LayoutParams params = (CoordinatorLayout.LayoutParams) ((View) contentView.getParent()).getLayoutParams();
         CoordinatorLayout.Behavior behavior = params.getBehavior();
