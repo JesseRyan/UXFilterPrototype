@@ -5,12 +5,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
 
 import com.jesseryan_dev.uxfilterprototype.bottomsheets.RefineFilterBottomSheetFragment;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    BottomSheetDialogFragment mBottomSheetDialogFragment;
 
     private final int android_image_res[] = {
             R.drawable.one, R.drawable.two, R.drawable.three,
@@ -26,10 +30,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         initViews();
 
-        BottomSheetDialogFragment bottomSheetDialogFragment = new RefineFilterBottomSheetFragment();
-        bottomSheetDialogFragment.show(getSupportFragmentManager(), bottomSheetDialogFragment.getTag());
+        mBottomSheetDialogFragment = new RefineFilterBottomSheetFragment();
 
     }
+
+    protected void showBottomSheet(){
+        mBottomSheetDialogFragment.show(getSupportFragmentManager(), mBottomSheetDialogFragment.getTag());
+    }
+
 
     private void initViews() {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.card_recycler_view);
@@ -41,7 +49,30 @@ public class MainActivity extends AppCompatActivity {
         DataAdapter adapter = new DataAdapter(resultImages);
         recyclerView.setAdapter(adapter);
 
+        TextView b1 = (TextView)findViewById(R.id.similar);
+        TextView b2 = (TextView)findViewById(R.id.new_vehicles);
+        TextView b3 = (TextView)findViewById(R.id.recommendations);
 
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showBottomSheet();
+            }
+        });
+
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showBottomSheet();
+            }
+        });
+
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showBottomSheet();
+            }
+        });
 
 
     }
